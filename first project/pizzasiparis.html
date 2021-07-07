@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<title> Sipariş | Emre Pizza</title> 
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+
+<body>
+
+	<h1>Emre Pizza</h1>
+	<p class="fan">Bir Tıkla Pizzalarımız Kapınızda</p>
+	<ul>
+	<li><a href="index.html">Ana Sayfa</a></li>
+	<li><a class="mevcutsayfa" href="pizzasiparis.html">Sipariş</a></li>
+	<li><a href="pizzalar.html">Pizzalarımız</a></li>
+	<li><a href="hakkimizda.html">Hakkımızda</a></li>
+	<li><a href="kampanyalar.html">Kampanyalar</a></li>
+	<li><a href="subelerimiz.html">Şubelerimiz</a></li>
+	<li><a href="franchising.html">Franchising</a></li>
+	<li><a href="tedarikcilerimiz.html">Tedarikçilerimiz</a></li>
+	<li><a href="pizzasansi.html">Pizza Kazan</a></li>  
+	<li><a href="feedback.html">Feedback</a></li> 
+	<li><a href="iletisim.html">İletişim</a></li>
+	<li><a href="sitemap.html">Site Haritası</a></li>
+	</ul>
+	<br>
+
+	
+	<form method = "post" action = "" name="siparis">
+
+		<table border="0" cellspacing="5" cellpading="2">
+		<label><strong style="color: orange;"> Dilediğiniz pizzayı veya pizzaları seçiniz:</strong></label>
+		<tr>
+		<td><p class="size25">
+		<label>Karışık Pizza <br> Orta boy fiyatı: 30 TL
+ 		<input name = "pizza" type = "checkbox" value = "mix" checked/>
+ 		</label><br><img src="karisikpizza.png" width="300" height="300">
+		</p></td>
+ 		<td><p class="size25">
+ 		<label>Emre Pizza Special <br> Orta boy fiyatı: 35 TL
+ 		<input name = "pizza" type = "checkbox" value = "spec" />
+ 		</label><br><img src="special.png" width="300" height="300">
+ 		</p></td>
+ 		<td><p class="size25">
+ 		<label>Dört Peynirli Pizza <br> Orta boy fiyatı: 35 TL
+ 		<input name = "pizza" type = "checkbox" value = "four" />
+ 		</label><br><img src="dortpeynirli.png" width="300" height="300">
+ 		</p></td>
+ 		</tr>
+ 		</table>
+
+		<p>
+ 		<label><strong style="color: orange;">Pizza Boyutunu Seçiniz:</strong> 
+ 			<br><strong>Not: Pizza boyutları arasında 5 TL fiyat farkı vardır.<br></strong>
+ 		<input name = "boy" type = "radio" value = "k" /> Küçük
+ 		<input name = "boy" type = "radio" value = "o" checked /> Orta
+ 		<input name = "boy" type = "radio" value = "b" /> Büyük
+ 		</label>
+ 		</p>
+
+ 		<p><strong style="color: orange;">Pizzanıza Ekstra Eklemek İstediğiniz Malzemeleri Seçiniz:</strong>
+ 			<br><strong>Not: Her ekstra ürün 2 TL tutarındadır.<br></strong>
+ 		<label>Acı Sos <input name = "ekstra" type = "checkbox" value = "acı" /></label>
+ 		<label>Meksika Biberi<input name = "ekstra" type = "checkbox" value = "mek" /></label>
+ 		<label>Susam<input name = "ekstra" type = "checkbox" value = "susam" /></label>
+		<p>
+
+		<label><strong style="color: orange;">Pizza Sipariş Adedi Seçiniz:</strong>
+		<select name = "adet">
+ 		<option selected>1</option>
+ 		<option>2</option>
+ 		<option>3</option>
+ 		<option>4</option>
+ 		<option>5</option>
+ 		<option>6</option>
+ 		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+ 		<option>10</option>
+ 		</select>
+		</label>
+		</p>
+
+		<p>
+		<label><strong style="color: orange;">Sipariş Notu:</strong><br>
+ 		<textarea name = "siparisnot" rows = "4" cols = "40"> </textarea>
+ 		</label>
+ 		</p>
+
+ 		<p> 
+ 		<label><strong style="color: orange;">İsim Soyisim:</strong><br> <input type="text" name="isim" size="38"></label> 
+ 		</p>
+     	<p> 
+     	<label><strong style="color: orange;">Teslimat Adresi:</strong><br> <textarea rows="4" cols="40" name="evadres"></textarea>
+     	</label>
+     	</p>
+     	<p> 
+     	<label><strong style="color: orange;">Telefon Numarası: </strong> <br> <input type="text" name="telno" size="38"></label> 
+     	</p>
+
+     	<p>
+ 		<label><strong style="color: orange;">Siparişi Teslim Etmesini İstediğiniz Şubemizi Seçiniz:</strong>
+ 		<input name = "sube" type = "radio" value = "balkat" checked/> Ankara/Balgat Şubesi
+ 		<input name = "sube" type = "radio" value = "keçi" /> Ankara/Keçiören Şubesi
+ 		<input name = "sube" type = "radio" value = "kadıköy" /> İstanbul/Kadıköy Şubesi
+ 		<input name = "sube" type = "radio" value = "pendik" /> İstanbul/Pendik Şubesi
+ 		<input name = "sube" type = "radio" value = "alanya" /> Antalya/Alanya Şubesi
+ 		</label>
+ 		</p>
+
+     	<p>
+ 		<label><strong style="color: orange;">Ödeme Tipini Seçiniz:</strong>
+ 		<input name = "odeme" type = "radio" value = "nakit" checked/> Nakit
+ 		<input name = "odeme" type = "radio" value = "kredi" /> Kredi Kartı
+ 		<input name = "odeme" type = "radio" value = "banka" /> Banka Kartı
+ 		</label>
+ 		</p>
+
+ 		<p>
+ 		<label><strong style="color: orange;">Sipariş Tutarı Hesaplama :</strong></label>
+ 		<br>
+            <label><strong>Aldığınız Karışık Pizza Sayısı : </label>
+            <input type="text" id="karisik"><br>
+            <label>Aldığınız Special Pizza Sayısı :</label>
+            <input type="text" id="ozel"><br>
+            <label>Aldığınız Dört Peynirli Pizza Sayısı :</label>
+            <input type="text" id="dpeynir"><br>
+            <label>Seçtiğiniz Pizza Boyutu (Küçük boy için 1,orta boy için 2,büyük boy için 3 giriniz):</label>
+            <input type="text" id="boyut"><br>
+            <label>Eklediğiniz Malzeme Sayısı :</label>
+            <input type="text" id="ekstralar"><br>
+            <input type="button" id="Fiyat" value="Fiyat Hesapla">
+        </p>
+
+        <div id="FiyatHesap"></div>
+        
+        <script>
+            
+            var FiyatHesapla=document.getElementById("Fiyat");
+            Fiyat.onclick=function(){
+            var karisik=Number(document.getElementById("karisik").value);
+            var ozel=Number(document.getElementById("ozel").value);
+            var dpeynir=Number(document.getElementById("dpeynir").value);
+            var boyut=Number(document.getElementById("boyut").value);
+            var ekstralar=Number(document.getElementById("ekstralar").value);
+            var tutar=karisik*20+ozel*25+dpeynir*25+boyut*5+ekstralar*2;
+            document.getElementById("FiyatHesap").innerHTML="<br> Siparişinizin toplam tutarı : </strong>"+tutar+" TL";
+            }
+            
+        </script>
+
+ 		<p>
+ 		<input type = "submit" value = "Siparişi Gönder" />
+ 		<input type = "reset" value = "Sıfırla" />
+ 		</p>
+ 		<br>
+
+
+
+</form>
+
+
+
+</body>
+
+</html>

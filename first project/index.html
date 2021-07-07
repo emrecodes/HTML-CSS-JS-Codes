@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<title> Emre Pizza </title> 
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+
+<body>
+
+	<h1>Emre Pizza</h1>
+	<p class="fan">Bir Tıkla Pizzalarımız Kapınızda</p>
+
+	<ul>
+	<li><a class="mevcutsayfa" href="index.html">Ana Sayfa</a></li>
+	<li><a href="pizzasiparis.html">Sipariş</a></li>
+	<li><a href="pizzalar.html">Pizzalarımız</a></li>
+	<li><a href="hakkimizda.html">Hakkımızda</a></li>
+	<li><a href="kampanyalar.html">Kampanyalar</a></li>
+	<li><a href="subelerimiz.html">Şubelerimiz</a></li>
+	<li><a href="franchising.html">Franchising</a></li>
+	<li><a href="tedarikcilerimiz.html">Tedarikçilerimiz</a></li>
+	<li><a href="pizzasansi.html">Pizza Kazan</a></li>
+	<li><a href="feedback.html">Feedback</a></li> 
+	<li><a href="iletisim.html">İletişim</a></li>
+	<li><a href="sitemap.html">Site Haritası</a></li>
+	</ul>
+	<br>
+
+	<center>
+	<!--Slider Başlangıç-->
+    <div class="slider">
+      <div class="slides">
+        <!--Radio butonları-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <!--Radio butonları sonu-->
+        <!--Slider fotoğrafları-->
+        <div class="slide ilk">
+          <a href="pizzasiparis.html"><img src="siparis.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="subelerimiz.html"><img src="subelerimiz.jpg" alt=""></a>
+        </div>
+        <div class="slide">
+          <a href="pizzalar.html"><img src="pizzacesitleri.jpg" alt=""></a>
+        </div>
+        <!--Slider fotoğrafları son-->
+        <!--Otomatik navigasyon başlama-->
+        <div class="otonavigasyon">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <!--Otomatik navigasyon bitiş-->
+      </div>
+      <!--Manuel navigasyon başlama-->
+      <div class="manuelnavigasyon">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+      <!--Manuel navigasyon bitiş-->
+    </div>
+    <!--Slider sonu-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 2500);
+    </script>
+
+    </center>
+
+    <center>
+    <p class="size25">Yenilenen Emre Pizza internet sitesine hoş geldiniz. Sitemizden online pizza siparişi verebilir, kampanyalarımız hakkında bilgi sahibi olabilir ve bizimle iletişime geçebilirsiniz. 
+	</p>
+	</center>
+
+</body>
+
+</html>

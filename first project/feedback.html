@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+	<title> Feedback | Emre Pizza </title> 
+	<style type="text/css">
+		.geridonutformu{
+			width: 450px;
+			font-size: 16px;
+			background: #495C70;
+			padding: 30px 30px 15px 30px;
+			border: 5px solid #53687E;
+		}
+		.geridonutformu input[type=submit],
+		.geridonutformu input[type=button],
+		.geridonutformu input[type=text],
+		.geridonutformu input[type=email],
+		.geridonutformu textarea,
+		.geridonutformu label
+		{
+			font-family: Georgia, "Times New Roman", Times, serif;
+			font-size: 16px;
+			color: #fff;
+
+		}
+		.geridonutformu label {
+			display:block;
+			margin-bottom: 10px;
+		}
+		.geridonutformu label > span{
+			display: inline-block;
+			float: left;
+			width: 150px;
+		}
+		.geridonutformu input[type=text],
+		.geridonutformu input[type=email] 
+		{
+			background: transparent;
+			border: none;
+			border-bottom: 1px dashed #83A4C5;
+			width: 275px;
+			outline: none;
+			padding: 0px 0px 0px 0px;
+			font-style: italic;
+		}
+		.geridonutformu textarea{
+			font-style: italic;
+			padding: 0px 0px 0px 0px;
+			background: transparent;
+			outline: none;
+			border: none;
+			border-bottom: 1px dashed #83A4C5;
+			width: 275px;
+			overflow: hidden;
+			resize:none;
+			height:20px;
+		}
+
+		.geridonutformu textarea:focus, 
+		.geridonutformu input[type=text]:focus,
+		.geridonutformu input[type=email]:focus,
+		.geridonutformu input[type=email] :focus
+		{
+			border-bottom: 1px dashed #D9FFA9;
+		}
+
+		.geridonutformu input[type=submit],
+		.geridonutformu input[type=button]{
+			background: #576E86;
+			border: none;
+			padding: 8px 10px 8px 10px;
+			border-radius: 5px;
+			color: #A8BACE;
+		}
+		.geridonutformu input[type=submit]:hover,
+		.geridonutformu input[type=button]:hover{
+		background: #394D61;
+		}
+		</style>	
+		<script type="text/javascript">
+		//otomatik genişleyen metin alanı
+		function adjust_textarea(h) {
+		    h.style.height = "20px";
+		    h.style.height = (h.scrollHeight)+"px";
+		}
+		</script>
+	<link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+
+<body>
+
+	<h1>Emre Pizza</h1>
+	<p class="fan">Bir Tıkla Pizzalarımız Kapınızda</p>
+
+	<ul>
+	<li><a href="index.html">Ana Sayfa</a></li>
+	<li><a href="pizzasiparis.html">Sipariş</a></li>
+	<li><a href="pizzalar.html">Pizzalarımız</a></li>
+	<li><a href="hakkimizda.html">Hakkımızda</a></li>
+	<li><a href="kampanyalar.html">Kampanyalar</a></li>
+	<li><a href="subelerimiz.html">Şubelerimiz</a></li>
+	<li><a href="franchising.html">Franchising</a></li>
+	<li><a href="tedarikcilerimiz.html">Tedarikçilerimiz</a></li>
+	<li><a href="pizzasansi.html">Pizza Kazan</a></li>  
+	<li><a class="mevcutsayfa" href="feedback.html">Feedback</a></li> 
+	<li><a href="iletisim.html">İletişim</a></li>
+	<li><a href="sitemap.html">Site Haritası</a></li>
+	</ul>
+	<br>
+
+	<center>
+	<h2>İstek ve Önerileriniz</h2>
+        <p>
+            Lütfen istek ve önerilerinizi bize bu form aracılığıyla gönderin:
+        </p>
+        
+        <form class="geridonutformu" action="" method="post">
+		<label>
+		<span>Ad Soyad</span><input type="text" name="adsoyad" required="true" />
+		</label>
+		<label>
+		<span>E-Posta Adresiniz</span><input type="email" name="eposta" required="true" />
+		</label>
+		<label>
+		<span>Konu</span><input type="text" name="konu" required="true" />
+		</label>
+		<label>
+		<span>Mesajınız</span><textarea name="ileti" onkeyup="adjust_textarea(this)" required="true"></textarea>
+		</label>
+		<label>
+		<span> </span><input type="submit" value="Gönder" />
+		</label>
+		</form>
+
+    </center>
+
+<body>
+</html>
